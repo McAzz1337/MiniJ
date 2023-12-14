@@ -494,6 +494,7 @@ public class CodeGenerator implements AstVisitor {
     public void visit(UnaryExpression unaryExpression) {
 
 
+        unaryExpression.visitChildren(this);
     }
 
     @Override
